@@ -27,9 +27,9 @@
 
   </head>
 
-  <body>
-    <div class="container">
-      <form id="search-form">
+  <body class="bg-secondary">
+    <div class="container col-8">
+      <form class='row p-3 bg-light justify-content-center' id="search-form">
 
         <h1> Library of Congress Search Engine</h1>
 
@@ -37,7 +37,7 @@
           <input type="text" class="form-control" placeholder="Search!" aria-label="Recipient's username" aria-describedby="basic-addon2">
         </div>
 
-        <select id="opt-select" class="custom-select">
+        <select id="opt-select" class="custom-select mb-3">
           <option selected>Select a format...</option>
           <option value="maps">Maps</option>
           <option value="audio">Audio</option>
@@ -49,7 +49,7 @@
           <option value="websites">Websites</option>
         </select>
 
-        <button id="search-btn" type="button" class="btn btn-secondary btn-lg btn-block">Click Me</button>
+        <button id="search-btn" type="button" class="btn btn-info btn-lg btn-block">Click Me</button>
 
       </div>
     </form>
