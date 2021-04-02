@@ -3,7 +3,7 @@ console.log(userInput)
    
 
 function getApi(event) {
-  var userRepo = userInput[0].value; 
+  var userRepo = userInput.val(); 
   console.log(userRepo)
   event.preventDefault();
     
@@ -17,9 +17,10 @@ function getApi(event) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data)
-        
-      });
+      for (let i = 0; i < data.results.length; i++) {       
+        console.log(data.results[i].url)
+        console.log(data.results[i].title)
+      }});
       console.log(requestUrl)
   }
 
