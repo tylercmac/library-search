@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="./style.css" 
+    />
+
+    <title>unit-06-mini-project</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-form">
+
+        <h1> Library of Congress Search Engine</h1>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+
+        <select id="opt-select" class="custom-select">
+          <option selected>Select a format...</option>
+          <option value="maps">Maps</option>
+          <option value="audio">Audio</option>
+          <option value="photos">Photos</option>
+          <option value="manuscripts">Manuscripts</option>
+          <option value="newspapers">Newspapers</option>
+          <option value="film-and-videos">Film and Videos</option>
+          <option value="notated-music">Notated Music</option>
+          <option value="websites">Websites</option>
+        </select>
+
+        <button id="search-btn" type="button" class="btn btn-secondary btn-lg btn-block">Click Me</button>
+
+      </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
