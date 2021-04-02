@@ -15,7 +15,10 @@ function getApi() {
       })
       .then(function (data) {
         console.log(data)
+      for (let i = 0; i < array.length; i++) {
+        console.log(data.results[i].url)
         
+      }
       });
   }
 
