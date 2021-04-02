@@ -1,11 +1,14 @@
-var userInput = $("#searchedItem")
-    
-    
+var userInput = $("input#inputForm")
+console.log(userInput) 
+   
 
-function getApi() {
+function getApi(event) {
+  var userRepo = userInput[0].value; 
+  console.log(userRepo)
+  event.preventDefault();
     
     // fetch request gets a list of all the repos for the node.js organization
-    
+    console.log(userRepo) 
     
     var requestUrl = 'https://loc.gov/search/?q=' + userRepo + '&fo=json';
   console.log(requestUrl)
@@ -15,17 +18,10 @@ function getApi() {
       })
       .then(function (data) {
         console.log(data)
-      for (let i = 0; i < array.length; i++) {
-        console.log(data.results[i].url)
         
-      }
       });
+      console.log(requestUrl)
   }
 
-  $(".submit").on("click", function() {
-    var userRepo = userInput.val()
-      preventDefault();
-      getApi();
-      console.log('https://loc.gov/search/?q=' + userRepo + '&fo=json')
-  })
+  $("#search-form").on("submit", getApi);
   
